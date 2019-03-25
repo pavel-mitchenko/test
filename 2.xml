@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<epcis:EPCISDocument xmlns:epcis="urn:epcglobal:epcis:xsd:1" schemaVersion="1.1" creationDate="2015-04-14T09:05:08.720-04:00">
+  <EPCISBody>
+    <EventList>
+	  	<!-- urn:epc:id:sgln:5012345.67890.D123 -->
+      <AggregationEvent>
+        <eventTime>2013-06-08T14:58:56.591Z</eventTime>
+        <eventTimeZoneOffset>+02:00</eventTimeZoneOffset>
+        <parentID>urn:epc:id:sscc:0614141.1234567890</parentID>
+        <childEPCs>
+          <epc>urn:epc:id:sgtin:0614141.107346.2017</epc>
+          <epc>urn:epc:id:sgtin:0614141.107346.2018</epc>
+        </childEPCs>
+        <action>OBSERVE</action>
+        <bizStep>urn:epcglobal:cbv:bizstep:receiving</bizStep>
+        <disposition>urn:epcglobal:cbv:disp:in_progress</disposition>
+        <readPoint>
+          <id>urn:epc:id:sgln:5012345.67890.D123</id>
+        </readPoint>
+        <bizLocation>
+          <id>urn:epc:id:sgln:0614141.00888.0</id>
+        </bizLocation>
+        <bizTransactionList>
+          <bizTransaction type="urn:epcglobal:cbv:btt:po">urn:epcglobal:cbv:bt:5012345000015:ABC123</bizTransaction>
+          <bizTransaction type="urn:epcglobal:cbv:btt:inv">urn:epcglobal:cbv:bt:0614141000012:XYZ987</bizTransaction>
+        </bizTransactionList>
+        <extension>
+          <sourceList>
+            <source type="urn:epcglobal:cbv:sdt:owning_party">urn:epc:id:sgln:0614141.00001.0</source>
+          </sourceList>
+          <destinationList>
+            <destination type="urn:epcglobal:cbv:sdt:owning_party">urn:epc:id:sgln:5012345.00001.0</destination>
+          </destinationList>
+        </extension>
+        <rfidTagReadEvent xmlns="https://www.plex.com/epcis-extension">
+          <message>TAGREAD</message>
+          <tagSeenCount>3</tagSeenCount>
+          <firstSeenTimeStampUptime>2012-09-23T05:10:12.000+03:00</firstSeenTimeStampUptime>
+          <tagsData>
+            <tag>
+              <tid>330C0093A000000200000009</tid>
+              <epc>urn:epc:id:sscc:0614141.1234567890</epc>
+              <rssi>-34</rssi>
+              <antennaID>1</antennaID>
+              <readCount>3</readCount>
+            </tag>
+            <tag>
+              <tid>330C0093A000000200000003</tid>
+              <epc>urn:epc:id:sgtin:0614141.107346.2017</epc>
+              <rssi>-34</rssi>
+              <antennaID>1</antennaID>
+              <readCount>3</readCount>
+            </tag>
+            <tag>
+              <tid>330C0093A000000200000004</tid>
+              <epc>urn:epc:id:sgtin:0614141.107346.2018</epc>
+              <rssi>-34</rssi>
+              <antennaID>1</antennaID>
+              <readCount>6</readCount>
+            </tag>
+          </tagsData>
+        </rfidTagReadEvent>
+      </AggregationEvent>
+    </EventList>
+  </EPCISBody>
+</epcis:EPCISDocument>

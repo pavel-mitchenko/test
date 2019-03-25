@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<epcis:EPCISDocument xmlns:epcis="urn:epcglobal:epcis:xsd:1"  schemaVersion="1.1" creationDate="2015-04-14T09:05:08.720-04:00">
+  <EPCISBody>
+    <EventList>
+	<!-- NewReadPoint -->
+      <ObjectEvent>
+        <eventTime>2012-09-23T05:10:12.000Z</eventTime>
+        <eventTimeZoneOffset>-05:00</eventTimeZoneOffset>
+        <epcList>
+          <epc>urn:epc:id:sgtin:0614141.112345.12345</epc>
+          <epc>urn:epc:id:sgtin:0614141.112345.99999</epc>
+        </epcList>
+        <action>OBSERVE</action>
+        <bizStep/>
+        <disposition/>
+        <readPoint>
+          <id>NewReadPoint</id>
+        </readPoint>
+        <bizLocation>
+          <id>urn:epc:id:sgln:5012345.67890.0</id>
+        </bizLocation>
+        <bizTransactionList>
+          <bizTransaction/>
+        </bizTransactionList>
+        <extension>
+          <sourceList>
+            <source type=""/>
+          </sourceList>
+          <destinationList>
+            <destination type=""/>
+          </destinationList>
+        </extension>
+        <rfidTagReadEvent xmlns="https://www.plex.com/epcis-extension">
+          <message>TAGREAD</message>
+          <tagSeenCount>2</tagSeenCount>
+          <firstSeenTimeStampUptime>2012-09-23T05:10:12.000+03:00</firstSeenTimeStampUptime>
+          <tagsData>
+            <tag>
+              <tid>330C0093A000000200000003</tid>
+              <epc>urn:epc:id:sgtin:0614141.112345.12345</epc>
+              <rssi>-34</rssi>
+              <antennaID>1</antennaID>
+              <readCount>3</readCount>
+            </tag>
+            <tag>
+              <tid>330C0093A000000200000004</tid>
+              <epc>urn:epc:id:sgtin:0614141.112345.99999</epc>
+              <rssi>-34</rssi>
+              <antennaID>1</antennaID>
+              <readCount>6</readCount>
+            </tag>
+          </tagsData>
+        </rfidTagReadEvent>
+      </ObjectEvent>
+    </EventList>
+  </EPCISBody>
+</epcis:EPCISDocument>
