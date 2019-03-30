@@ -1,1 +1,1 @@
-It is shor descriotion 
+It is shor description
